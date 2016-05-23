@@ -22,3 +22,5 @@ Pages to optimize:
 * TODO
 
 #### Pizza page
+Functions edited in `main.js` file:
+* changePizzaSizes(size)
