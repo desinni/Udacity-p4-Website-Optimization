@@ -16,9 +16,9 @@ You will optimize a provided website with a number of optimization- and performa
 3. Run command `python -m SimpleHTTPServer`
 4. Open localhost `http://0.0.0.0:8000/` on your browser
 
-## Description
+## Optimization
 Pages to optimize:
-* 'views/pizza.html', 'views/js/main.js'
-*
+* `views/pizza.html`, `views/js/main.js`
+* TODO
 
-### Pizza page
+#### Pizza page
