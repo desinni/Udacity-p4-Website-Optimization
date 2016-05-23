@@ -16,5 +16,5 @@ You will optimize a provided website with a number of optimization- and performa
 3. Run command `python -m SimpleHTTPServer`
 4. Open localhost `http://0.0.0.0:8000/` on your browser
 
-## What was changed
-* 
+### What was changed
+*
