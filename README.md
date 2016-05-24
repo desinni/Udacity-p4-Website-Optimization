@@ -5,13 +5,15 @@ Fourth project from https://www.udacity.com Front-End Web Developer Nanodegree p
 ## Project 4:
 
 You will optimize a provided website with a number of optimization- and performance-related issues so that it achieves a target PageSpeed score and runs at 60 frames per second.
+Part 1: Optimize mobile portfolio;
+Part 2: Optimize pizza place page.
 
 #### Supporting Courses:
 * Browser Rendering Optimization
 * Website Performance Optimization
 
 ## Running the page
-Live site [link](http://desinni.github.io/Website-Optimization/)
+Live site [link here](http://desinni.github.io/Website-Optimization/)
 
 Or:
 
@@ -20,10 +22,9 @@ Or:
 3. Run command `python -m SimpleHTTPServer`
 4. Open localhost `http://0.0.0.0:8000/` on your browser
 
-## Optimization
+## Optimization Part 2
 Pages to optimize:
 * `views/pizza.html`, `views/js/main.js`
-* TODO
 
 #### Pizza page
 Edited in `main.js` file:
