@@ -496,6 +496,25 @@ function updatePositions() {
 
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
+  // var items = document.getElementsByClassName('mover');
+  // var secondItems = [0, 1, 2, 3, 4];
+  // var moduloItems = [secondItems.fill(secondItems.length + items.length - 1)];
+  // var phaseOne = document.body.scrollTop / 1250;
+  //   for (var i = 0, j = 0; i < items.length, j < secondItems.length; i++, j++) {
+  //     var phase = Math.sin(phaseOne + j);
+  //     var slideLeft = -items[i].basicLeft + 1000 * phase + 'px';
+  //     items[i].style.transform = 'translateX(' + slideLeft + ') translateZ(0)';
+  //   }
+  //
+  //   Array.prototype.fill = function(val) {
+  //     var len = this.length;
+  //     if (len < val) {
+  //       for (var i = val - 1 - len; i >= 0; i--) {
+  //         this[i + 1] = this[i % 1];
+  //       }
+  //     }
+  //     return this;
+  //   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
   // Super easy to create custom metrics.

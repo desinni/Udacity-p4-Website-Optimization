@@ -100,3 +100,5 @@ for (var i = 0; i < totalPizzas; i++) {
 }
 ```
 Here you count the width and the height of the screen and generate just the needed amount of pizzas to fill up the screen. The `innerWidth` and `innerHeight` properties return the inner width and height of a window's content area.
+
+* __Moving pizzas.__ Checking `console.log(phase, document.body.scrollTop / 1250)` showed, that there are 5 numbers generated, so a good idea is to simplify those calculations.
