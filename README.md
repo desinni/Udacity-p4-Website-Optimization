@@ -14,6 +14,7 @@ You will optimize a provided website with a number of optimization- and performa
 Live site [link](http://desinni.github.io/Website-Optimization/)
 
 Or:
+
 1. Download the source code to your computer
 2. `cd` to the folder of the game
 3. Run command `python -m SimpleHTTPServer`
