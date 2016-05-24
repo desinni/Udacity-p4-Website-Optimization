@@ -86,7 +86,7 @@ function changePizzaSizes(size) {
 var cols = 8;
 var s = 256;
 for (var i = 0; i < 200; i++) {
-  _code_
+  ...code...
 }
 ```
 could be changed to
@@ -96,7 +96,7 @@ var cols = Math.floor(window.innerWidth / 150),
     s = 256,
     totalPizzas = cols * rows;
 for (var i = 0; i < totalPizzas; i++) {
-  _code_
+  ...code...
 }
 ```
 Here you count the width and the height of the screen and generate just the needed amount of pizzas to fill up the screen. The `innerWidth` and `innerHeight` properties return the inner width and height of a window's content area.
