@@ -519,7 +519,7 @@ document.addEventListener('DOMContentLoaded', function() {
   for (var i = 0; i < totalPizzas; i++) {
       var elem = document.createElement('img');
       elem.className = 'mover';
-      elem.src = "images/pizza.png";
+      elem.src = "../dist/pizza/images/pizza-small.png";
       elem.style.height = "100px";
       elem.style.width = "73.333px";
       elem.basicLeft = (i % cols) * s;
