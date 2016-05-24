@@ -24,7 +24,8 @@ Pages to optimize:
 #### Pizza page
 Edited in `main.js` file:
 * __Changing pizza sizes.__ All this code
-`function determineDx (elem, size) {
+```
+function determineDx (elem, size) {
  var oldWidth = elem.offsetWidth;
  var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
  var oldSize = oldWidth / windowWidth;
@@ -52,9 +53,11 @@ function changePizzaSizes(size) {
    var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
    document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
  }
-}`
+}
+```
 changed to
-`function changePizzaSizes(size) {
+```
+function changePizzaSizes(size) {
   switch (size) {
     case "1":
       newwidth = 25;
@@ -73,6 +76,7 @@ changed to
   for (var i = 0; i < randomPizzas.length; i++) {
     randomPizzas[i].style.width = newwidth + "%";
   }
-}`
+}
+```
 
 * `var items = document.querySelectorAll('.mover')` changed to  `var items = document.getElementsByClassName("mover")`. All __querySelectorAll__ changed to __getElements ByClassName__. Also DOM selectors as these were moved out of `for` loops, this way you don't need to access DOM elements every time you're looping.
