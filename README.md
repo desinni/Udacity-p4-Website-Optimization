@@ -91,9 +91,9 @@ for (var i = 0; i < 200; i++) {
 ```
 could be changed to
 ```javascript
-var cols = Math.floor(window.innerWidth / 150),
-var rows = Math.floor(window.innerHeight / 200),
-var s = 256,
+var cols = Math.floor(window.innerWidth / 150);
+var rows = Math.floor(window.innerHeight / 200);
+var s = 256;
 var totalPizzas = cols * rows;
 for (var i = 0; i < totalPizzas; i++) {
   ...code...
