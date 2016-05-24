@@ -5,7 +5,9 @@ Fourth project from https://www.udacity.com Front-End Web Developer Nanodegree p
 ## Project 4:
 
 You will optimize a provided website with a number of optimization- and performance-related issues so that it achieves a target PageSpeed score and runs at 60 frames per second.
+
 Part 1: Optimize mobile portfolio;
+
 Part 2: Optimize pizza place page.
 
 #### Supporting Courses:
