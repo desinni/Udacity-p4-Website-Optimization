@@ -421,52 +421,13 @@ var resizePizzas = function(size) {
 
   changeSliderLabel(size);
 
-  //  // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
-  // function determineDx (elem, size) {
-  //   var oldWidth = elem.offsetWidth;
-  //   var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
-  //   var oldSize = oldWidth / windowWidth;
-  //
-  //   // Optional TODO: change to 3 sizes? no more xl?
-  //   // Changes the slider value to a percent width
-  //   function sizeSwitcher (size) {
-  //     switch(size) {
-  //       case "1":
-  //         return 0.25;
-  //       case "2":
-  //         return 0.3333;
-  //       case "3":
-  //         return 0.5;
-  //       default:
-  //         console.log("bug in sizeSwitcher");
-  //     }
-  //   }
-  //
-  //   var newSize = sizeSwitcher(size);
-  //   var dx = (newSize - oldSize) * windowWidth;
-  //
-  //   return dx;
-  // }
-
-  // // Iterates through pizza elements on the page and changes their widths
-  // function changePizzaSizes(size) {
-  //   var randomPizzas = document.querySelectorAll(".randomPizzaContainer");
-  //   for (var i = 0; i < randomPizzas.length; i++) {
-  //     var dx = determineDx(randomPizzas[i], size);
-  //     var newwidth = (randomPizzas[i].offsetWidth + dx) + 'px';
-  //     randomPizzas[i].style.width = newwidth;
-  //   }
-  // }
-  //
-  // changePizzaSizes(size);
-
   function changePizzaSizes(size) {
     switch (size) {
       case "1":
         newwidth = 25;
         break;
       case "2":
-        newwidth = 33.3;
+        newwidth = 33.33;
         break;
       case "3":
         newwidth = 50;
@@ -475,7 +436,7 @@ var resizePizzas = function(size) {
         console.log("bug in sizeSwitcher");
     }
 
-    var randomPizzas = document.querySelectorAll(".randomPizzaContainer");
+    var randomPizzas = document.getElementsByClassName("randomPizzaContainer");
     for (var i = 0; i < randomPizzas.length; i++) {
       randomPizzas[i].style.width = newwidth + "%";
     }
@@ -526,7 +487,7 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
-  var items = document.querySelectorAll('.mover');
+  var items = document.getElementsByClassName("mover");
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
