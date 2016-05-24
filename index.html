@@ -8,27 +8,19 @@
     <title>Cameron Pittman: Portfolio</title>
 
     <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
     <link href="dist/css/style.css" rel="stylesheet">
-    <link href="dist/css/print.css" rel="stylesheet">
+    <link href="dist/css/print.css" rel="stylesheet" media=“print”>
 
-    <script>
-      (function(w,g){w['GoogleAnalyticsObject']=g;
-      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
-
-      // Optional TODO: replace with your Google Analytics profile ID.
-      ga('create', 'UA-XXXX-Y');
-      ga('send', 'pageview');
-    </script>
-    <script src="http://www.google-analytics.com/analytics.js"></script>
-    <script async src="dist/js/perfmatters.js"></script>
   </head>
 
   <body>
     <header>
       <a href="/"><img src="dist/img/profilepic.jpg"></a>
-      <p>Cameron Pittman<br><span>Course Developer</span></p>
+      <p><strong>Cameron Pittman</strong>
+      <br />
+      <span>Course Developer</span></p>
     </header>
 
     <div class="container">
@@ -41,31 +33,42 @@
           <li>
             <img src="dist/img/project-2048.jpg">
             <a href="project-2048.html">Build Your Own 2048!</a>
-            <p>I made my own version of 2048. How cool is that!?</p>
+            <p><em>I made my own version of 2048. How cool is that!?</em></p>
           </li>
 
           <li>
             <img src="dist/img/project-webperf.jpg">
             <a href="project-webperf.html">Website Performance Optimization</a>
-            <p>Hey... this class looks familiar.</p>
+            <p><em>Hey... this class looks familiar.</em></p>
           </li>
 
           <li>
             <img src="dist/img/project-mobile.jpg">
             <a href="project-mobile.html">Mobile Web Development</a>
-            <p>Making mobile apps isn't so hard after all.</p>
+            <p><em>Making mobile apps isn't so hard after all.</em></p>
           </li>
 
           <li>
-            <img style="width: 100px;" src="views/images/pizzeria.jpg">
+            <img style="width: 100px;" src="dist/pizza/pizzeria-small.jpg">
             <a href="views/pizza.html">Cam's Pizzeria</a>
-            <p>Who wants a performant pizza?</p>
+            <p><em>Who wants a performant pizza?</em></p>
           </li>
         </ul>
     </div>
 
     <footer>
-      <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
+      <p>&copy; Web Performance 2014 <em><span id="crp-stats"></span></em></p>
     </footer>
   </body>
+
+  <script src="http://www.google-analytics.com/analytics.js" async></script>
+  <script async src="dist/js/perfmatters.js"></script>
+
+  <script async>
+    (function(w,g){w['GoogleAnalyticsObject']=g;
+    w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
+    ga('create', 'UA-XXXX-Y');
+    ga('send', 'pageview');
+  </script>
+
 </html>
