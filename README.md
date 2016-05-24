@@ -63,7 +63,7 @@ function changePizzaSizes(size) {
       newwidth = 25;
       break;
     case "2":
-      newwidth = 33.3;
+      newwidth = 33.33;
       break;
     case "3":
       newwidth = 50;
@@ -80,3 +80,23 @@ function changePizzaSizes(size) {
 ```
 
 * `var items = document.querySelectorAll('.mover')` changed to  `var items = document.getElementsByClassName("mover")`. All __querySelectorAll__ changed to __getElementsByClassName__. Also DOM selectors as these were moved out of `for` loops, this way you don't need to access DOM elements every time you're looping.
+
+* __Generating pizzas.__ It is only smart to generate as much pizzas as there can fit on the screen and not through out all the page. That is why all this code
+```javascript
+var cols = 8;
+var s = 256;
+for (var i = 0; i < 200; i++) {
+  _code_
+}
+```
+could be changed to
+```javascript
+var cols = Math.floor(window.innerWidth / 150),
+    rows = Math.floor(window.innerHeight / 200),
+    s = 256,
+    totalPizzas = cols * rows;
+for (var i = 0; i < totalPizzas; i++) {
+  _code_
+}
+```
+Here you count the width and the height of the screen and generate just the needed amount of pizzas to fill up the screen. The `innerWidth` and `innerHeight` properties return the inner width and height of a window's content area.
